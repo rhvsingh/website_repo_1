@@ -20,6 +20,10 @@ h2{
     font-family: "Times New Roman", Times, serif;
 }
 
+.dotting{
+    padding-bottom: 25px;
+}
+
 p{
     text-align: center;
     font-size: 30px;
@@ -46,6 +50,7 @@ p{
     z-index: 4;
     background-position: fixed;
     background-color: #222;
+    padding-top: 25px;
 }
 
 #footer_content {
