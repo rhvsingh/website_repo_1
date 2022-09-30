@@ -13,6 +13,31 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(97, 62, 9);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.dotting{
+    padding-bottom: 25px;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(230, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 /*---Start of Footer---*/
 
 #footer {
@@ -25,6 +50,7 @@ html {
     z-index: 4;
     background-position: fixed;
     background-color: #222;
+    padding-top: 25px;
 }
 
 #footer_content {
@@ -35,14 +61,14 @@ html {
 .footer_content_heading {
     margin: 10px 10px 0px 8px;
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    color: #FFFFFF;
+    font-size: 25px;
+    color: #00b7ff;
 }
 
 .footer_content_body {
     margin: 10px;
     font-family: 'Oxygen', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     color: rgba(240, 240, 240, 1.00);
 }
 
@@ -59,7 +85,7 @@ html {
 #footer_more {
     width: 100%;
     height: auto;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin-left: 8px;
     /*margin-left: 40px;*/
 }
