@@ -208,157 +208,7 @@ p{
     color: #db3236;
 }
 
-/*----Start of form----*/
 
-#form {
-    width: auto;
-}
-
-#form h2 {
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0.2px;
-    word-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-#form form {
-    width: 300px;
-    outline: none;
-}
-
-#form form:hover {
-    outline: none;
-}
-
-#form form div {
-    position: relative;
-    margin: 10px auto;
-}
-
-#form form div input,
-#form form div textarea {
-    border-bottom: 2px solid #999;
-    width: 100%;
-    font-size: 12px;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 0.5px;
-    word-spacing: 0.8px;
-    outline: none;
-    color: #fff;
-    background: inherit;
-}
-
-#form form div input {
-    padding: 8px 0px 3px 0px;
-    margin-bottom: 8px;
-}
-
-#form form div textarea {
-    height: 60px;
-    padding: 8px 0px;
-    margin-bottom: 0px;
-}
-
-#form form div label {
-    position: absolute;
-    top: 6px;
-    left: 0px;
-    transition: 0.3s;
-    pointer-events: none;
-    font-size: 14px;
-    color: #fff;
-}
-
-#form form div input:focus ~ label,
-#form form div textarea:focus ~ label,
-#form form div input:valid ~ label,
-#form form div textarea:valid ~ label {
-    top: -10px;
-    left: 0px;
-    font-size: 12px;
-    color: deepskyblue;
-    font-weight: bold;
-    outline: 0;
-}
-
-#form form div input:focus,
-#form form div textarea:focus,
-#form form div input:valid,
-#form form div textarea:valid {
-    border-bottom-color: aqua;
-    outline: 0;
-}
-
-#form form div input:-webkit-autofill,
-#form form div input:-webkit-autofill:hover, 
-#form form div input:-webkit-autofill:focus
-#form form div input:-webkit-autofill, 
-#form form div textarea:-webkit-autofill,
-#form form div textarea:-webkit-autofill:hover
-#form form div textarea:-webkit-autofill:focus {
-  -webkit-text-fill-color: #fff;
-  transition: background-color 5000s ease-in-out 0s;
-    
-}
-
-#form form div input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-}
-
-#form form div input[type="submit"] {
-    border: 0px;
-    cursor: pointer;
-    background-color: #2a7bfc;
-    font-family: 'Dancing+Script', sans-serif;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 12px;
-    text-align: center;
-    width: 80px;
-    height: 20px;
-    line-height: 0px;
-    border-radius: 2px;
-    padding-top: 4px;
-    transition: 0.5s;
-}
-
-#form form div input[type="submit"]:hover {
-    background: rgb(39, 193, 0);
-}
-
-/*------End of form------*/
-
-@media screen and (max-width: 680px) {
-    #footer-more-container {
-        flex-direction: column-reverse;
-    }
-    
-    #footer_more ul li {
-        margin-left: 0px;
-    }
-    
-    #footer_more_connect_heading {
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    
-    #footer_more_connect ul {
-        margin-left: 40px;
-        width: 100px;
-    }
-    
-    #form {
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    
-    #form form {
-        width: 100%;
-    }
-}
 
 /*---End of Footer---*/
 
@@ -407,3 +257,71 @@ p{
         margin-top: 0px;
     }
 }
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: white;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: black;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }

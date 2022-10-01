@@ -204,35 +204,26 @@ img {vertical-align: middle;}
                 <div class="footer_more">
 
                     <!----Start of form---->
+                    
+                    <button class="open-button" onclick="openForm()">Open Form</button>
 
-                    <div id="form">
+                    <div class="form-popup" id="myForm">
+                        <form action="mail.php" class="form-container">
+                          <h1>Contact Us </h1>
+                      
+                          <label for="name"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="Username" required>
+                      
+                          <label for="email "><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="Email" required>
 
-                        <h2>Contact Us</h2>
-
-                        <form action="mail.php" method="post">
-
-                            <div>
-                                <input type="text" name="username" title="Enter Your Name" required>
-                                <label>Name</label>
-                            </div>
-
-                            <div>
-                                <input type="email" name="email" title="Enter Your Email ID" required><label>Email</label>
-                            </div>
-
-                            <div>
-                                <textarea name="comment" required></textarea>
-                                <label>Feedback</label>
-                            </div>
-
-                            <div>
-                                <input type="submit">
-                            </div>
-
+                          <label for="Feedback">Comment</label><br>
+                          <textarea id="Feedback" name="comment" placeholder="Write something.." ></textarea>
+                               
+                          <button type="submit" class="btn">Submit</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                         </form>
-
-                    </div>
-
+                      </div>
                     <!----End of form---->
 
                 </div>
@@ -274,6 +265,14 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
 </script>
     
 </body>
