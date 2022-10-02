@@ -1,0 +1,327 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Asap|Khula|Montserrat|Muli|Nunito|Source+Sans+Pro|Abel|Hind+Madurai|Karla|Lato|Open+Sans|Oxygen|Questrial|Quicksand|Roboto|Spectral+SC|Titillium+Web|Dancing+Script");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(97, 62, 9);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.dotting{
+    padding-bottom: 25px;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(230, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*---Start of Footer---*/
+
+#footer {
+    height: auto;
+    width: 100%;
+    padding: inherit;
+    overflow: hidden;
+    background: #222;
+    position: sticky;
+    z-index: 4;
+    background-position: fixed;
+    background-color: #222;
+    padding-top: 25px;
+}
+
+#footer_content {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.footer_content_heading {
+    margin: 10px 10px 0px 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: #00b7ff;
+}
+
+.footer_content_body {
+    margin: 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    color: rgba(240, 240, 240, 1.00);
+}
+
+#footer-more-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer_more {
+    margin: 0px;
+}
+
+#footer_more {
+    width: 100%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    margin-left: 8px;
+    /*margin-left: 40px;*/
+}
+
+#footer_more_heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#footer_more ul li {
+    list-style: none;
+    text-align: justify;
+    margin: 20px 0px;
+    font-size: 15px;
+    color: #E8E7E7;
+    transition: ease-in-out 0.4s;
+}
+
+#footer_more ul li:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    #footer_more div {
+        margin-top: 20px;
+        display: block;
+    }
+    #footer_more ul li {
+        display: block;
+        margin: 12px 2.5%;
+        border-bottom: 2px solid #333;
+        text-align: left;
+    }
+}
+
+#footer_more ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer_more_connect {
+    color: #fff;
+    position: relative;
+}
+
+#footer_more_connect_heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#footer_more_connect ul {
+    margin-left: 30px;
+}
+
+#footer_more_connect ul li {
+    list-style: none;
+    margin: 20px 10px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#footer_more_connect ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#footer_more_connect ul li:nth-child(1):hover {
+    color: #3b5998;
+}
+
+#footer_more_connect ul li:nth-child(2):hover {
+    color: #e95950;
+}
+
+#footer_more_connect ul li:nth-child(3):hover {
+    color: #4dc247;
+}
+
+#footer_more_connect ul li:nth-child(4):hover {
+    color: #0084b4;
+}
+
+#footer_more_connect ul li:nth-child(5):hover {
+    color: #db3236;
+}
+
+#footer_icons4,
+#footer_icons5,
+#footer_icons6,
+#footer_icons7,
+#footer_icons8 {
+    font-size: 22px;
+    color: inherit;
+    padding-left: 10px;
+    position: absolute;
+    line-height: 18px;
+    left: 0px;
+    text-align: right;
+}
+
+#footer_more_connect ul li:hover #footer_icons4 {
+    color: #3b5998;
+}
+
+#footer_more_connect ul li:hover #footer_icons5 {
+    color: #e95950;
+}
+
+#footer_more_connect ul li:hover #footer_icons6 {
+    color: #4dc247;
+}
+
+#footer_more_connect ul li:hover #footer_icons7 {
+    color: #0084b4;
+}
+
+#footer_more_connect ul li:hover #footer_icons8 {
+    color: #db3236;
+}
+
+
+
+/*---End of Footer---*/
+
+/*---Start of trade-----*/
+
+#trade {
+    background: #333;
+    height: 30px;
+    margin-top: 20px;
+}
+
+#trade_align {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+    color: #fff;
+    padding-top: 8px;
+}
+
+/*----End of trade------*/
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (min-width: 921px) and (max-width: 1000px) {
+    #footer_more_contact2 {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 921px) {
+
+    #footer_more_contact1 {
+        margin-top: 0px;
+    }
+    #footer_more_contact2 {
+        margin-top: 0px;
+    }
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: white;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: black;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
