@@ -13,12 +13,11 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
+h2{
     text-align: center;
-    font-size: 30px;
-   text-decoration: solid;
-   margin: 0;
-   padding-bottom: 0%;
+    font-size: 40px;
+    color: rgb(97, 62, 9);
+    font-family: "Times New Roman", Times, serif;
 }
 
 .dotting{
@@ -27,11 +26,9 @@ h1{
 
 p{
     text-align: center;
-    text-decoration: solid;
     font-size: 30px;
-    
-    color: rgb(17, 2, 17);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(230, 0, 0);
+    font-family: "Times New Roman", Times, serif;
 }
 
 .center {
@@ -328,15 +325,3 @@ p{
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
-  .header {
-  top: 0;
-  position:fixed;
-  width: 100%;
-	height: 70px;
-  padding: 30px;
-  text-align: center;
-  background: #767a7a;
-  color: white;
-  font-size: 30px;
-  
-}
